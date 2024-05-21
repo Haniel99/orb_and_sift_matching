@@ -202,7 +202,7 @@ class Matcher:
         """
         self.detector1 = detector1
         self.detector2 = detector2
-        self.bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)  # Use NORM_L2 for SIFT, use NORM_HAMMING for ORB
+        self.bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True) 
         self.matches = self.match_features()
 
     def match_features(self):
